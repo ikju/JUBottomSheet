@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JUBottomSheet_Example' do
+  pod 'JUBottomSheet', :path => '../'
+
+  target 'JUBottomSheet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
