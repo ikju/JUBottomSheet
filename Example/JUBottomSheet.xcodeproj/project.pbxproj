@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09A482F1A19A38C2A0D553EA /* Pods_JUBottomSheet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8FCF9617FD18D29888BE76 /* Pods_JUBottomSheet_Example.framework */; };
 		183267782A9A206F885AA8E0 /* Pods_JUBottomSheet_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7168108DC70BD2FA5202DEB1 /* Pods_JUBottomSheet_Tests.framework */; };
+		29197F402614B4A300521D18 /* JUBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29197F3F2614B4A300521D18 /* JUBottomSheet.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		010F5AA6B95963DA622F97C9 /* Pods-JUBottomSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUBottomSheet_Tests.release.xcconfig"; path = "Target Support Files/Pods-JUBottomSheet_Tests/Pods-JUBottomSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		29197F3F2614B4A300521D18 /* JUBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JUBottomSheet.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JUBottomSheet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUBottomSheet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +45,9 @@
 		6E88E338C941ACBD5B484D42 /* Pods-JUBottomSheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUBottomSheet_Example.debug.xcconfig"; path = "Target Support Files/Pods-JUBottomSheet_Example/Pods-JUBottomSheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7168108DC70BD2FA5202DEB1 /* Pods_JUBottomSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUBottomSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D15EA5049EE3F3798F8244 /* Pods-JUBottomSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUBottomSheet_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JUBottomSheet_Tests/Pods-JUBottomSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C666BBED62E26D0AD34E6267 /* JUBottomSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JUBottomSheet.podspec; path = ../JUBottomSheet.podspec; sourceTree = "<group>"; };
-		D7389317D13F1187E159508D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DA2DCA5E8F66C25EFBB56C02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C666BBED62E26D0AD34E6267 /* JUBottomSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JUBottomSheet.podspec; path = ../JUBottomSheet.podspec; sourceTree = "<group>"; };
+		D7389317D13F1187E159508D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DA2DCA5E8F66C25EFBB56C02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF3961A3C1884445C7E26E22 /* Pods-JUBottomSheet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUBottomSheet_Example.release.xcconfig"; path = "Target Support Files/Pods-JUBottomSheet_Example/Pods-JUBottomSheet_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				29197F3F2614B4A300521D18 /* JUBottomSheet.swift */,
 			);
 			name = "Example for JUBottomSheet";
 			path = JUBottomSheet;
@@ -156,7 +159,6 @@
 				B0D15EA5049EE3F3798F8244 /* Pods-JUBottomSheet_Tests.debug.xcconfig */,
 				010F5AA6B95963DA622F97C9 /* Pods-JUBottomSheet_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -333,6 +336,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				29197F402614B4A300521D18 /* JUBottomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
