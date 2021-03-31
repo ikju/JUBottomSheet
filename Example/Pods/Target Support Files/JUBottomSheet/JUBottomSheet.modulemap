@@ -1,0 +1,6 @@
+framework module JUBottomSheet {
+  umbrella header "JUBottomSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

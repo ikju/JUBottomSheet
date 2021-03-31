@@ -1,0 +1,16 @@
+PODS:
+  - JUBottomSheet (0.1.0)
+
+DEPENDENCIES:
+  - JUBottomSheet (from `../`)
+
+EXTERNAL SOURCES:
+  JUBottomSheet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JUBottomSheet: 521303991c58684ae20c0b417637e72c36ae08c2
+
+PODFILE CHECKSUM: fd07e2f05b3b0b88ed5cb8f279bb282128b49116
+
+COCOAPODS: 1.10.1
