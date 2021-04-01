@@ -10,6 +10,7 @@
 		09A482F1A19A38C2A0D553EA /* Pods_JUBottomSheet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8FCF9617FD18D29888BE76 /* Pods_JUBottomSheet_Example.framework */; };
 		183267782A9A206F885AA8E0 /* Pods_JUBottomSheet_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7168108DC70BD2FA5202DEB1 /* Pods_JUBottomSheet_Tests.framework */; };
 		29197F402614B4A300521D18 /* JUBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29197F3F2614B4A300521D18 /* JUBottomSheet.swift */; };
+		29205E402615AA5400F4A72E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29205E3F2615AA5400F4A72E /* CollectionViewCell.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		010F5AA6B95963DA622F97C9 /* Pods-JUBottomSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUBottomSheet_Tests.release.xcconfig"; path = "Target Support Files/Pods-JUBottomSheet_Tests/Pods-JUBottomSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		29197F3F2614B4A300521D18 /* JUBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JUBottomSheet.swift; sourceTree = "<group>"; };
+		29205E3F2615AA5400F4A72E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JUBottomSheet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUBottomSheet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				29197F3F2614B4A300521D18 /* JUBottomSheet.swift */,
+				29205E3F2615AA5400F4A72E /* CollectionViewCell.swift */,
 			);
 			name = "Example for JUBottomSheet";
 			path = JUBottomSheet;
@@ -336,6 +339,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				29205E402615AA5400F4A72E /* CollectionViewCell.swift in Sources */,
 				29197F402614B4A300521D18 /* JUBottomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -503,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

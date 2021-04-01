@@ -10,7 +10,7 @@
 		0B888CADBEAAF32A0BA4F0E41D98FBEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		14AA65C34257769E2DD08414ECE8108F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3E61A691FBAB9E21DFDB4F3CF2D73FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4318AA507AC2AAB078D2B0A40580E8CF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F89C20DBB00CE1B77389C3DEF8C06 /* ReplaceMe.swift */; };
+		4318AA507AC2AAB078D2B0A40580E8CF /* JUBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F89C20DBB00CE1B77389C3DEF8C06 /* JUBottomSheet.swift */; };
 		5449FD90D444153FB95EEC186E84A372 /* Pods-JUBottomSheet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF48967A6AEE0199C6F8886C176EA73 /* Pods-JUBottomSheet_Example-dummy.m */; };
 		5A3911F7FF6F99AACA7488BF9E2F80FF /* JUBottomSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF07A347718311FDBE7BEBA17662F1 /* JUBottomSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D6C552B2D09C8A66F053DEFF34D3145 /* JUBottomSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE15EE6A5DC501E4DDE1CA3E7B387197 /* JUBottomSheet-dummy.m */; };
@@ -42,7 +42,7 @@
 		089FE3584AAECDBFEEE0C62E87AD5025 /* JUBottomSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JUBottomSheet.release.xcconfig; sourceTree = "<group>"; };
 		0AF48967A6AEE0199C6F8886C176EA73 /* Pods-JUBottomSheet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JUBottomSheet_Example-dummy.m"; sourceTree = "<group>"; };
 		0EE8CCA9455C9174581D0808064E8020 /* Pods-JUBottomSheet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JUBottomSheet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E7F89C20DBB00CE1B77389C3DEF8C06 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = JUBottomSheet/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		2E7F89C20DBB00CE1B77389C3DEF8C06 /* JUBottomSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JUBottomSheet.swift; path = JUBottomSheet/Classes/JUBottomSheet.swift; sourceTree = "<group>"; };
 		3038FB29D54149DDE85B43B3AD46446D /* Pods-JUBottomSheet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JUBottomSheet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38E4A271DEA3E3F10890F263A7889759 /* Pods-JUBottomSheet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JUBottomSheet_Tests-Info.plist"; sourceTree = "<group>"; };
 		528708D236AF4F56632656EB7466356E /* JUBottomSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JUBottomSheet.modulemap; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		AFAD3524846555934F50FD487D8E1F21 /* JUBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				2E7F89C20DBB00CE1B77389C3DEF8C06 /* ReplaceMe.swift */,
+				2E7F89C20DBB00CE1B77389C3DEF8C06 /* JUBottomSheet.swift */,
 				4015189FE38BD48ECB9831121257D5DE /* Pod */,
 				BD6345EDB4B7CA73042746D88BEAB074 /* Support Files */,
 			);
@@ -384,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6C552B2D09C8A66F053DEFF34D3145 /* JUBottomSheet-dummy.m in Sources */,
-				4318AA507AC2AAB078D2B0A40580E8CF /* ReplaceMe.swift in Sources */,
+				4318AA507AC2AAB078D2B0A40580E8CF /* JUBottomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

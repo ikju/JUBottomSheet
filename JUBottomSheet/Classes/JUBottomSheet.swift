@@ -1,3 +1,4 @@
+
 //
 //  JUBottomSheet.swift
 //  JUBottomSheet_Example
@@ -84,36 +85,9 @@ extension JUBottomSheet {
     
     
     
-    @objc
-    func keyboardWillShow(sender: NSNotification) {
-        if !keyboardWillShowBool {
-            keyboardWillShowBool = true
-            let userInfo = sender.userInfo!
-            let keyboardSize: CGSize = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey as NSObject]! as AnyObject).cgRectValue.size
-            
-            
-            
-            UIView.animate(withDuration: 0.1, animations: { () -> Void in
-                //print("키보드 ani1 : ",self.scrollView.frame.origin.y)
-                self.getWindow!.frame.origin.y -= keyboardSize.height
-                //print("키보드 ani2 : ",self.scrollView.frame.origin.y)
-                
-            })
-        }
-        keyboardWillHideBool = true
-        
-        
-    }
+    
 
-    @objc
-    func keyboardWillHide(sender: NSNotification) {
-        
-        if keyboardWillHideBool {
-            keyboardWillHideBool = false
-            keyboardWillShowBool = false
-            self.getWindow!.frame.origin.y = 0
-        }
-    }
+   
     
     
     
@@ -147,10 +121,7 @@ extension JUBottomSheet {
     
     open func show()
     {
-        //신규 수업 추가
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         print(getWindow)
         if let window = getWindow {
             
