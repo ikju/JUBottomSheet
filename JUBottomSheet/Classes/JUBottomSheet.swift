@@ -119,10 +119,8 @@ extension JUBottomSheet {
 @available(iOS 13.0, *)
 extension JUBottomSheet {
     
-    open func show()
-    {
+    open func show(){
         
-        print(getWindow)
         if let window = getWindow {
             
             getBackGroundView.translatesAutoresizingMaskIntoConstraints = false

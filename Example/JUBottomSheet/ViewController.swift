@@ -45,6 +45,7 @@ class ViewController: UIViewController {
             collectionview.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
             collectionview.delegate = self
             collectionview.dataSource = self
+            
             }
         )
         
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
         
     }
 }
+
 @available(iOS 13.0, *)
 extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
