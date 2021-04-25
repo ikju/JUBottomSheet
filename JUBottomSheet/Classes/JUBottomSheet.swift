@@ -18,7 +18,7 @@ import UIKit
 @available(iOS 13.0, *)
 open class JUBottomSheet: UIView {
 
-    private var getWindow : UIWindow!
+    private var getWindow : UIWindow?
     private var getBackGroundView : UIView = UIView()
     
     private var uicollectionview : UICollectionView!
@@ -70,17 +70,20 @@ open class JUBottomSheet: UIView {
 extension JUBottomSheet {
     @objc
     public func closeBottomSheet(gestureRecognizer: UITapGestureRecognizer){
-        UIView.animate(withDuration: 0.3, animations: {
-            self.getBackGroundView.alpha = 0
-            
-            self.uicollectionview.frame = CGRect(x: 0, y: self.uicollectionviewY, width: self.getWindow.frame.width, height: self.uicollectionviewValue)
-            
-        }, completion: {done in
-            if done {
-                self.uicollectionview.removeFromSuperview()
-                self.getBackGroundView.removeFromSuperview()
-            }
-        })
+        if let window = getWindow {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.getBackGroundView.alpha = 0
+                
+                self.uicollectionview.frame = CGRect(x: 0, y: self.uicollectionviewY, width: window.frame.width, height: self.uicollectionviewValue)
+                
+            }, completion: {done in
+                if done {
+                    self.uicollectionview.removeFromSuperview()
+                    self.getBackGroundView.removeFromSuperview()
+                }
+            })
+        }
+        
     }
     
     
@@ -99,19 +102,22 @@ extension JUBottomSheet {
     
     //컬랙션뷰 내려가게 하는 함수
     public func collectionviewDown(_ completion : @escaping ()-> Void){
-        UIView.animate(withDuration: 0.3, animations: {
-            self.getBackGroundView.alpha = 0
-            
-            self.uicollectionview.frame = CGRect(x: 0, y: self.uicollectionviewY, width: self.getWindow.frame.width, height: self.uicollectionviewValue)
-            completion()
-            //self.white_filter_collectionview.deleteItems(at: [IndexPath.init(item: 0, section: 0)])
-        }, completion: {done in
-            if done {
+        if let window = getWindow {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.getBackGroundView.alpha = 0
                 
-                self.uicollectionview.removeFromSuperview()
-                self.getBackGroundView.removeFromSuperview()
-            }
-        })
+                self.uicollectionview.frame = CGRect(x: 0, y: self.uicollectionviewY, width: window.frame.width, height: self.uicollectionviewValue)
+                completion()
+                //self.white_filter_collectionview.deleteItems(at: [IndexPath.init(item: 0, section: 0)])
+            }, completion: {done in
+                if done {
+                    
+                    self.uicollectionview.removeFromSuperview()
+                    self.getBackGroundView.removeFromSuperview()
+                }
+            })
+        }
+        
     }
 }
 
@@ -157,16 +163,19 @@ extension JUBottomSheet {
     }
     
     public func _backGroundView(uiview : UIView){
-        getWindow.addSubview(uiview)
+        if let window = getWindow{
+            window.addSubview(uiview)
+            
+            uiview.translatesAutoresizingMaskIntoConstraints = false
+            uiview.backgroundColor = UIColor(white: 0, alpha: 0.5)
+            uiview.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeBottomSheet(gestureRecognizer:))))
+            
+            uiview.topAnchor.constraint(equalTo: window.topAnchor).isActive = true
+            uiview.leadingAnchor.constraint(equalTo: window.leadingAnchor).isActive = true
+            uiview.trailingAnchor.constraint(equalTo: window.trailingAnchor).isActive = true
+            uiview.bottomAnchor.constraint(equalTo: window.bottomAnchor).isActive = true
+        }
         
-        uiview.translatesAutoresizingMaskIntoConstraints = false
-        uiview.backgroundColor = UIColor(white: 0, alpha: 0.5)
-        uiview.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeBottomSheet(gestureRecognizer:))))
-        
-        uiview.topAnchor.constraint(equalTo: getWindow.topAnchor).isActive = true
-        uiview.leadingAnchor.constraint(equalTo: getWindow.leadingAnchor).isActive = true
-        uiview.trailingAnchor.constraint(equalTo: getWindow.trailingAnchor).isActive = true
-        uiview.bottomAnchor.constraint(equalTo: getWindow.bottomAnchor).isActive = true
     }
     
 }
